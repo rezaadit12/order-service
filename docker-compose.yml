@@ -1,0 +1,13 @@
+# name: booking-order-app
+services:
+  order-service:
+    container_name: order-service
+    platform: linux/amd64
+    # image: rezawiber/order-service:1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8002:8002"
+    env_file:
+      - .env
