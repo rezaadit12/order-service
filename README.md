@@ -1,7 +1,13 @@
+<h3>Order Service</h3>
+
+<h3>Description</h3>
+
+<p>This repository will be used to manage order</p>
+
 <h3>Directory Structure</h3>
 
 ```
-GO_SKELETON
+order-service
     L clients                        → Contains the client for calling other services
     L cmd                            → Contains the main entry point or initial configuration of the application
     L common                         → Stores common functions used throughout the application
@@ -29,7 +35,7 @@ GO_SKELETON
 ## How to run
 
 ```bash
-make watch-prepare (only for the first time or when you add new dependency)
+make watch-prepare (only for the first order or when you add new dependency)
 make watch
 ```
 
@@ -37,3 +43,10 @@ make watch
 
 ```bash
 docker-compose up -d --build --force-recreate
+```
+
+## How to build
+```bash
+make build
+```
+
