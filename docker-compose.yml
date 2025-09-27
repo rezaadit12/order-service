@@ -3,7 +3,7 @@ services:
   order-service:
     container_name: order-service
     platform: linux/amd64
-    # image: rezawiber/order-service:1
+    image: rezawiber/order-service:1
     build:
       context: .
       dockerfile: Dockerfile
